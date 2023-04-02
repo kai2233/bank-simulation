@@ -13,7 +13,7 @@ public class Project3 {
         //Bank bank = new Bank("inputAccounts.txt");
         Scanner keyboard = new Scanner(System.in);
         System.out.print("Enter a file name: ");
-        String fileName = scanner.nextLine();
+        String fileName = keyboard.nextLine();
         File file = new File(fileName);
         if (!file.exists()) {
             System.out.println("File not found. Exiting program...");
