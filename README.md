@@ -9,6 +9,7 @@
     C	778472		Pierre		Merrill		3986.80	592.13
     S	555562		Daanyal		Howarth		1662.99
     S	414616		Cory		Riggs		9576.88
+    
 2.Once you have entered a valid file name, you will see a menu with the following options:
 L - Lookup balance
 P - Print account info
@@ -18,4 +19,5 @@ W - Withdraw
 A - Add account
 R - Remove account
 Q - Quit
+
 3.Follow the prompts to select an option and perform the desired operation. The application will continue to run until you choose the "Q" option to quit.
