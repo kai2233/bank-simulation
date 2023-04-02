@@ -1,16 +1,27 @@
 import java.util.Scanner;
+import java.io.File;
 public class Project3 {
     public static void main(String[] args) throws Exception {
-        if (args.length != 1) {
-            System.out.println("Usage: java Project2 <filename>");
-            System.exit(1);
-        }
+//         if (args.length != 1) {
+//             System.out.println("Usage: java Project2 <filename>");
+//             System.exit(1);
+//         }
 
         SavingsAccount.setAnnualInterestRate(1.5);
 
-        Bank bank = new Bank(args[0]);
+        //Bank bank = new Bank(args[0]);
         //Bank bank = new Bank("inputAccounts.txt");
         Scanner keyboard = new Scanner(System.in);
+        System.out.print("Enter a file name: ");
+        String fileName = scanner.nextLine();
+        File file = new File(fileName);
+        if (!file.exists()) {
+            System.out.println("File not found. Exiting program...");
+            System.exit(0);
+        }catch (IOException e) {
+            e.printStackTrace();
+        }
+        Bank bank = new Bank(fileName);
 
         char choice = printMenuAndGetChoice(keyboard);
 
