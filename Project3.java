@@ -18,8 +18,6 @@ public class Project3 {
         if (!file.exists()) {
             System.out.println("File not found. Exiting program...");
             System.exit(0);
-        }catch (IOException e) {
-            e.printStackTrace();
         }
         Bank bank = new Bank(fileName);
 
