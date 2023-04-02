@@ -1,5 +1,6 @@
 # bank-simulation
 1.The application will prompt you to enter the name of a file containing account information. You can enter the name of an existing file, or create a new file by following the format.
+
 C	384738		Maha		Yates		77.27	909.86
 C	314434		Ceri		Douglas		1582.08	386.08
 C	119749		Vivek		Donald		8095.35	623.84
